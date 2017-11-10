@@ -29,23 +29,30 @@ world {
 	width: 100vw;
 }
 
-ground {
+personnage {
 	position: absolute;
-	bottom: 0;
-	height: 30vh;
+	bottom: 20vh;
+	height: 15vh;
 	width: 100vw;
 	background-color: var(--vraiMarron);
 }
 
-mazars {
-	height: 15h;
-	z-index: 99;
+ground {
 	position: absolute;
-	bottom: 26vh;
-	object-fit: cover;
-}
-mazars invaders img {
-	height: 15vh;
-	width: 5vw;
+	bottom: 0;
+	height: 20vh;
+	width: 100vw;
+	background-color: var(--vraiMarron);
 }
 
+mazars invader {
+	height: 15vh;
+	width: 10vw;
+	bottom: 0;
+	object-fit: cover;
+}
+
+img {
+	height: 15vh;
+	width: 10vw;
+}
