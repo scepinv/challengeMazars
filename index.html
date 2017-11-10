@@ -1,0 +1,39 @@
+<head>
+	<title>Jeux 2d essai</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<audio loop>
+		<source src="hotline-miami-2.mp3" type="audio/mpeg">
+	</audio>
+
+	<world>
+
+		<ground>
+
+			<mazars style="transition: transform 0.05s linear; transform: translateX(0vw);"><img id="mazaDisplay" src="pika.gif" alt=""><img style="display: none" id="mazaDisplayStatic" src="Cactus1.jpg" alt=""></mazars>
+			
+			<invader style="transition: transform 0.05s linear; transform: translateX(100vw);"><img id="invada0" src="bulbi.gif" alt=""><img style="display: none" id="invada0static" src="Cactus2.jpg" alt=""></invader>
+			
+			<invader style="transition: transform 0.05s linear; transform: translateX(200vw);"><img id="invada1" src="bulbi2.gif" alt=""><img style="display: none" id="invada1static" src="Cactus3.jpg" alt=""></invader>
+		
+			<invader style="transition: transform 0.05s linear; transform: translateX(300vw);"><img id="invada2" src="bulbi3.gif" alt=""><img style="display: none" id="invada2static" src="Cactus.jpg" alt=""></invader>
+
+			<div class="message" id="0" style="display:none;">
+				Bienvenue chez les SCEP Invaders !<br> Nous sommes l’association digitale et vidéoludique d’ESCP Europe. Depuis 2014, nous organisons tournois et formations (coding, design) et collaborons avec des entreprises du digital.<br><br>SCEP Invaders se tourne vers l’avenir avec son nouveau projet!<br><br>  Press Enter to continue !
+			</div>
+
+			<div class="message" id="1" style="display:none">
+				"Hacke ton futur" réunit étudiants et professionnels de l’industrie lors d’une journée de workshops pour découvrir les métiers du digital.<br><br> En équipes, étudiants et managers mènent ensemble un projet concret et progressent grâce aux compétences acquises à chaque atelier. Plus qu’un simple forum, son cadre informel et inclusif favorise une vraie rencontre entre étudiants et professionnels.<br><br> Press Enter to continue !
+			</div>
+
+			<div class="message" id="2" style="display:none">
+				Nous prévoyons la réalisation de cet événement pour Mai 2018 et pour un budget total de 6000 euros.<br> Nous sommes déjà en contact avec 6 entreprises du digital et de l’e-sport. L’aventure ne fait que commencer !<br><br> Press Enter to continue !
+			</div>
+			
+		</ground>	
+	</world>
+	<script src="mazars.js"></script>
+</body>
+	
