@@ -15,12 +15,6 @@ body {
 	overflow: hidden;
 }
 
-.message {
-	background-color: white;
-	width: 100vw;
-	height: 20vh;
-}
-
 world {
 	background-color: skyblue;
 	position: absolute;
@@ -44,8 +38,6 @@ mazars {
 	bottom: 26vh;
 	object-fit: cover;
 }
-mazars invaders img {
-	height: 15vh;
-	width: 5vw;
+mazars img {
+	height: 15vh; 
 }
-

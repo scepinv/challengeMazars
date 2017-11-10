@@ -44,25 +44,18 @@ window.addEventListener("load", function() {
 			{
 				messageId = i;
 				messageOn = true;
-				movingOrStatic("", "none");
+				document.getElementById(i).style["display"] = "";
+				document.getElementById("mazaDisplay").src = "Cactus.jpg";
+
 			}
 		}
 	}
 
-	function movingOrStatic(Static,Moving){
-
-		for(i=0; i < invaderArr.length; i++){
-			document.getElementById("invada"+i+"static").style["display"] = Moving;
-			document.getElementById("invada"+i).style["display"] = Static;
-		}
-		document.getElementById("mazaDisplayStatic").style["display"] = Moving;
-		document.getElementById("mazaDisplay").style["display"] = Static;
-	}
-
 	function endMessage(id){
 
+		document.getElementById(id).style["display"] = "none";
 		messageOn = false;
-		movingOrStatic("none", "");
+		document.getElementById("mazaDisplay").src = "assets/pika.gif";
 
 	}
 
