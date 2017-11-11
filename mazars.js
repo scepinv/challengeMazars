@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
 
 
 	mazimg.setAttribute("src","mazarsImmo.png");
-
+	enterFirst.innerHTML = "Press <enter>enter</enter> to start";
 	window.addEventListener("keydown", function(evt) {
 		if(evt.keyCode == 39 && !messageOn && middle) {
 			evt.preventDefault();
