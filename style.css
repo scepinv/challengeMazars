@@ -1,7 +1,8 @@
 :root {
 	--vraiMarron : #6B3A04;
 	--orange : #FF4D00;
-	--nuitInvader : #4D338F;
+	--nuitInvader : #291952;
+	--jauneInvader : #FFC200;
 }
 
 * {
@@ -36,7 +37,7 @@ enter {
 
 firstScreen {
 	background-color: var(--nuitInvader);
-	background-image: url("cadre.png");
+	background-image: url("debut.png");
 	background-size: cover;
 	background-position: 50% 50%;
 	position: absolute;
@@ -48,7 +49,7 @@ firstScreen {
 
 #begin {
 	position: absolute;
-	top: 15vh;
+	top: 25vh;
 	width: 100vw;
 	text-align: center;
 	animation-name: float2; 
@@ -58,8 +59,8 @@ firstScreen {
 }
 
 @keyframes float2 {
-    from {top: 15vh;}
-    to {top: 16vh;}
+    from {top: 25vh;}
+    to {top: 26vh;}
 }
 
 #title {
@@ -94,7 +95,8 @@ firstScreen {
 	width: 70vw;
 	left: 15vw;
 	bottom: 20vh;
-	text-align: right;
+	text-align: center;
+	text-shadow: 0 0 5px var(--orange);
 }
 
 
@@ -161,10 +163,15 @@ personnages {
 
 mazars, invader {
 	height: 15vh;
-	width: 10vw;
+	/*width: 10vw;*/
 	bottom: 0;
 	object-fit: cover;
 	position: absolute;
+}
+
+invader:last-of-type img {
+	height: 15vh;
+	width: auto;
 }
 
 mazars {
@@ -183,7 +190,7 @@ img {
 
 #messageEnd{
 	position: absolute;
-	color: var(--orange);
+	color: var(--jauneInvader);
 	font-size: 50px;
 	font-family: Arial;
 	text-align: center;
@@ -191,6 +198,18 @@ img {
 	top: 50vh;
 	max-height: 10vh;
 	text-shadow: 0 0 7px white;
+}
+#messageEnd a {
+	color: white;
+	padding-bottom: 10px;
+	border-bottom: 0px solid var(--orange);
+	transition: text-shadow 0.5s, border-bottom 0.5s;
+	text-decoration: none;
+}
+#messageEnd a:hover {
+	color: white;
+	text-shadow: 0 0 5px var(--orange);
+	border-bottom: 9px solid var(--orange);
 }
 
 end{
