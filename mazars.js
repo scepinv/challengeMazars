@@ -6,8 +6,8 @@ window.addEventListener("load", function() {
 	var invapos = []
 	for(i = 0; i < invaders.length; i++)
 		invapos[i] = getTranslateNum(invaders[i]);
-	var pas_invada = 0.50;
-	var pas_maza =  0.50;
+	var pas_invada = 0.5;
+	var pas_maza =  0.5;
 	var messageId = 0;
 	var messageOn = false;
 	var begin = true;
@@ -65,9 +65,11 @@ window.addEventListener("load", function() {
 	},false);
 
 	function moveMaza(maza,pas) {
-		mazpos = mazpos + pas;
-		maza.style["transform"] = "translateX("+mazpos+"vw)";
-		if (mazpos >= 90) {
+		if(mazpos > 10.5 || pas >= 0) {
+			mazpos = mazpos + pas;
+			maza.style["transform"] = "translateX("+mazpos+"vw)";
+		}
+		if (mazpos >= 87) {
 			middle = false;
 			document.querySelector("world").style["display"] = "none";
 			document.querySelector("end").style["display"] = "";
